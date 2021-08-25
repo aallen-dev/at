@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "node test",
     "stage-app": "babel src -d stage --extensions \".ts,.tsx,.js\"",
     "check-types": "tsc",
     "bundle-app": "browserify -x react -x react-dom stage/index.js | terser -mc > dist/js/index.js",
