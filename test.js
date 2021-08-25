@@ -1,2 +1,2 @@
-console.log('a')
-process.exit(1)
+console.log(process.env.username)
+// process.exit(1)
