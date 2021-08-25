@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "chrome": "86"
+        },
+        "useBuiltIns": "usage",
+        "corejs": "3.6.5"
+      }
+    ],
+    [
+      "@babel/preset-typescript",
+      {
+        "isTSX": true,
+        "allExtensions": true
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-react-constant-elements"
+  ]
+}
