@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "stage-app": "babel src -d stage --extensions \".ts,.tsx,.js\"",
     "check-types": "tsc",
     "bundle-app": "browserify -x react -x react-dom stage/index.js | terser -mc > dist/js/index.js",
@@ -17,24 +17,13 @@
   "devDependencies": {
     "@babel/cli": "^7.12.7",
     "@babel/core": "^7.12.7",
-    "@babel/plugin-transform-react-constant-elements": "^7.12.1",
     "@babel/preset-env": "^7.12.7",
-    "@babel/preset-react": "^7.12.7",
-    "@babel/preset-typescript": "^7.12.7",
-    "@types/puppeteer": "^5.4.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
     "browserify": "^17.0.0",
     "core-js": "^3.7.0",
     "terser": "^5.5.0",
-    "typescript": "^4.1.2",
     "watchify": "^3.11.1"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "immer": "^8.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "use-immer": "^0.4.2"
+    "express": "^4.17.1"
   }
 }
